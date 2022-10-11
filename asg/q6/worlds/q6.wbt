@@ -1,0 +1,65 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position -3.3880129651953017e-16 -2.1175081032470636e-17 6.10330157103199
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+}
+Wall {
+  translation -0.875 -0.375 0
+  size 0.25 1.75 0.1
+}
+Wall {
+  translation 0.625 0.625 0
+  name "wall(5)"
+  size 0.25 0.25 0.0001
+  appearance Roughcast {
+    colorOverride 0 1 0
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 0.125 0.5 0
+  name "wall(1)"
+  size 0.25 1 0.1
+}
+Wall {
+  translation 1.125 0.125 0
+  name "wall(4)"
+  size 0.25 2.25 0.1
+}
+Wall {
+  translation 0.125 -1.125 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(2)"
+  size 0.25 2.25 0.1
+}
+Wall {
+  translation 0.5 1.125 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(3)"
+  size 0.25 1 0.1
+}
+E-puck {
+  translation -1.375 -0.125 -6.45263e-05
+  rotation 0 0 -1 -0.02619530717958618
+  controller "bug2"
+  groundSensorsSlot [
+    GPS {
+      name "gps_1"
+    }
+    GPS {
+      translation 0.02 0 0
+      name "gps_2"
+    }
+  ]
+}
